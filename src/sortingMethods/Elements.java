@@ -36,5 +36,10 @@ public class Elements implements Comparable<Elements>{
 		return (this.id>o.getId())?1:(this.id==o.getId())?0:-1;
 	}
 	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return this.id + " -> " + this.content;
+	}
 	
 }
