@@ -5,7 +5,6 @@ import java.util.List;
 
 public class SelectionSorting {
 	List<Elements> list;
-	private boolean flag = true;
 	private Elements max;
 	private int index;
 	

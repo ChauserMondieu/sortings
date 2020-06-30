@@ -35,6 +35,22 @@ public class Testing {
 		printList(list);
 		long end2 = System.currentTimeMillis();
 		System.out.println("Selection total time: " + (end2-start2) + "ms.");
+		
+		// test for insert sort
+		InsertSorting is = new InsertSorting();
+		long start4 = System.currentTimeMillis();
+		is.sorting(list);
+		printList(list);
+		long end4 = System.currentTimeMillis();
+		System.out.println("insert total time: " + (end4-start4) + "ms.");
+		
+		// test for quick sort
+		QuickSorting qs = new QuickSorting();
+		long start3 = System.currentTimeMillis();
+		qs.sorting(list,0,list.size()-1);
+		printList(list);
+		long end3 = System.currentTimeMillis();
+		System.out.println("quick total time: " + (end3-start3) + "ms.");
 				
 	}
 	
